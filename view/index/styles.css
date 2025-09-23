@@ -1,0 +1,37 @@
+p {
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    background-color: darkgray;
+    margin: auto;                  /* center horizontally */
+    display: flex;
+    flex-direction: column;        /* stack children vertically */
+    align-items: center;           /* center children horizontally */
+    justify-content: center;       /* center vertically in the viewport */
+    padding: 20px;
+    border-radius: 10px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+#sendMessage {
+
+}
+
+.container {
+    background-color: dimgray;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.container.left {
+    align-self: flex-start; /* overrides parent centering */
+}

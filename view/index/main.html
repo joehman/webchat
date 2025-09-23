@@ -3,16 +3,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super sigma webbsida</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+<body>
+    <div class="container" id="app">
+        <h1>Prata med varandra</h1>
+        <p id="chat"></p>
 
+        <div class="container left">
+            <p>Skicka meddelanden:</p>
+            <input id="sendMessage" class="container" type="text" name="" id="messageInput">
+            <input type="button" value="skickas" id="send"></button>
+        </div>
 
-    <h1>Prata med varandra</h1>
-    <input type="" name="" id="input">
-    <input type="button" value="skickas" id="send"></button>
+        <div class="container">
+            <p>Användarnamn:</p>
+            <input type="text" id="usernameInput">
+        </div>
 
-    <p id="chat"></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
-
 </body>
 </html>
+
+
