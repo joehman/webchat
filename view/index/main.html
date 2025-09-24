@@ -7,19 +7,20 @@
 </head>
 <body>
     <div class="container" id="app">
-        <h1>Prata med varandra</h1>
-        <p id="chat"></p>
 
         <div class="container left">
-            <p>Skicka meddelanden:</p>
-            <input id="sendMessage" class="container" type="text" name="" id="messageInput">
-            <input type="button" value="skickas" id="send"></button>
+            <input type="text" id="usernameInput" class="container" placeholder="Användarnamn">
         </div>
 
-        <div class="container">
-            <p>Användarnamn:</p>
-            <input type="text" id="usernameInput">
+
+        <div class="container" id="chatContainer">
+            <p id="chat"></p>
         </div>
+
+        <div class="container left wide">
+            <input class="container" type="text" name="" id="messageInput" placeholder="Type your message here...">
+        </div>
+
 
     </div>
     <script src="/socket.io/socket.io.js"></script>

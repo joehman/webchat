@@ -1,13 +1,15 @@
-p {
-
-}
 
 html, body {
     height: 100%;
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+}
+
 #app {
+
     background-color: darkgray;
     margin: auto;                  /* center horizontally */
     display: flex;
@@ -21,11 +23,29 @@ html, body {
     height: fit-content;
 }
 
-#sendMessage {
+#chat {
+    height: 50vh;
+    width: 90vw;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+#chatContainer {
+    background-color: white;
+}
 
+#messageInput {
+    width: 100%;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 50%;
 }
 
 .container {
+    background-image: url("hjalmar.jpg");
+
+
     background-color: dimgray;
     padding: 10px 20px;
     border-radius: 8px;
@@ -34,4 +54,8 @@ html, body {
 
 .container.left {
     align-self: flex-start; /* overrides parent centering */
+}
+.container.left.wide {
+    width: 97%;
+    margin: auto;
 }

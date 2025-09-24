@@ -2,7 +2,6 @@ const chat = document.getElementById('chat');
 const inputText = document.getElementById('messageInput');
 const usernameInput = document.getElementById('usernameInput');
 
-const send = document.getElementById('send');
 
 // Connect to backend via Socket.IO
 const socket = io();
@@ -25,10 +24,6 @@ socket.on("message", (msg) => {
     chat.scrollTop = chat.scrollHeight; // auto-scroll
 });
 
-// Send a new message
-send.onclick = () => {
-    sendMessage();
-};
 inputText.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         sendMessage();

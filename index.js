@@ -38,6 +38,8 @@ io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
 
   socket.on("message", async (data) => {
+    console.log("Received message from ", socket.id);
+    
     const msg = new Message(data);
     await msg.save();
 
