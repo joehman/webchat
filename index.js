@@ -32,6 +32,9 @@ app.get("/messages", async (req, res) => {
   const messages = await Message.find().sort({ timeStamp: 1 });
   res.json(messages);
 });
+app.get ("/", (req, res) => {
+    res.redirect(`http://localhost:${port}/main.html`);
+});
 
 // Socket.IO events
 io.on("connection", (socket) => {

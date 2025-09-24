@@ -2,6 +2,9 @@
 html, body {
     height: 100%;
     margin: 0;
+    display:flex;
+
+    justify-content: center;
 }
 
 h1 {
@@ -9,25 +12,23 @@ h1 {
 }
 
 #app {
-
     background-color: darkgray;
     margin: auto;                  /* center horizontally */
     display: flex;
+
     flex-direction: column;        /* stack children vertically */
-    align-items: center;           /* center children horizontally */
-    justify-content: center;       /* center vertically in the viewport */
+
     padding: 20px;
     border-radius: 10px;
-
-    width: fit-content;
-    height: fit-content;
 }
 
 #chat {
-    height: 50vh;
+    height: 60vh;
     width: 90vw;
     overflow-y: auto;
     overflow-x: auto;
+
+    font-size: 20px;
 }
 #chatContainer {
     background-color: white;
@@ -41,11 +42,11 @@ input::placeholder {
     color: black;
     opacity: 50%;
 }
+input {
+    font-size: 20px;
+}
 
 .container {
-    background-image: url("hjalmar.jpg");
-
-
     background-color: dimgray;
     padding: 10px 20px;
     border-radius: 8px;
@@ -56,6 +57,7 @@ input::placeholder {
     align-self: flex-start; /* overrides parent centering */
 }
 .container.left.wide {
-    width: 97%;
+    width: 100%;
     margin: auto;
+    padding: 2px;
 }
